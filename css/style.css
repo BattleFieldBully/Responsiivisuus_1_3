@@ -33,6 +33,7 @@ a:hover {
 div#container {
     display: flex;
     flex-direction: column;
+    margin: var(--general-margin);
 }
 
 div#content {
@@ -46,6 +47,53 @@ div#content section {
     flex-wrap: wrap;
     border-right: 1px solid var(--dark-foreground-color);
     margin: calc(var(--general-margin) * 2) 0 var(--general-margin) 0;
+}
+
+header {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: inherit;
+    align-items: center;
+    border-top: 1px solid var(--dark-foreground-color);
+    border-bottom: 1px solid var(--dark-foreground-color);
+    height: 40px;
+}
+
+nav ul {
+    padding-left: calc(var(--general-padding) / 2);
+}
+
+nav li {
+    display: inline-block;
+    width: 5em;
+    margin-right: var(--general-margin);
+}
+
+aside {
+    padding: var(--general-padding);
+    padding-top: calc(var(--general-padding) * 1.5);
+
+}
+
+footer {
+    background-color: var(--dark-background-color);
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+footer p {
+    color: var(--light-foreground-color);
 }
 
 article {
